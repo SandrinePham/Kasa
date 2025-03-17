@@ -1,0 +1,16 @@
+
+.body-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cartes par ligne */
+    gap: 20px; /* Espace entre les cartes */
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    margin: auto;
+    padding: 3%;
+  }
+
+.body{
+    margin: auto;
+    width: 90%;
+    margin-bottom: 25px;
+}

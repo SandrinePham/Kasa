@@ -1,0 +1,18 @@
+import { Link } from "react-router-dom";
+import "./banner.scss";
+
+const Banner = () => {
+  return (
+    <>
+      <div className="banner">
+        <img src="/assets/images/logo/LOGO.svg" alt="Logo Kasa" />{" "}
+        <nav className="navLinks">
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+        </nav>
+      </div>
+    </>
+  );
+};
+
+export default Banner;

@@ -1,0 +1,81 @@
+.apartmentContent {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+.apartmentTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  color: #ff6060;
+  font-family: "Montserrat", sans-serif;
+  size: 18px;
+  justify-content: space-evenly;
+}
+
+.host p {
+  margin-left: 10px;
+  color: #ff6060;
+}
+
+.apartmentTitle h2 {
+  color: #ff6060;
+  size: 36px;
+  margin-bottom: 0;
+}
+
+.hostPicture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Rend l'image circulaire */
+  object-fit: cover; /* Garde l'aspect proportionnel */
+}
+.apartmentDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.location {
+  font-family: "Montserrat", sans-serif;
+  color: #383838;
+  size: 18px;
+  margin-top: 0;
+}
+
+.apartmentValue{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  size: 18px;
+}
+
+.tags-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.tag{
+  background-color: #ff6060;
+  color: white;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  size: 14px;
+  width: 115px;
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.section{
+width: 100%;
+}

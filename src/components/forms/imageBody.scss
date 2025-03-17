@@ -1,0 +1,31 @@
+@import "../../assets/style/variables.scss";
+
+.image-container {
+    position: relative;
+    width: 90%;          /* Ou la largeur spécifique que tu veux pour l'image */
+    height: 200px;        /* Hauteur de l'image */
+    margin: 25px auto;    /* Marge de 25px en haut et en bas, centré horizontalement */
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* Pour que l'image couvre bien la zone sans être déformée */
+    border-radius: 25px;
+    filter: brightness(0.5);
+    
+    
+  }
+  
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;         /* La couleur du texte */
+    font-size: 2rem;      /* Taille du texte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajoute une ombre au texte pour le rendre lisible */
+    margin: 0;
+    font-family: $font-family;
+  }
+  
