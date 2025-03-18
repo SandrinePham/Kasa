@@ -1,4 +1,4 @@
-@import "../../assets/style/variables.scss";
+@use "../../assets/style/variables.scss";
 
 .collapseContainer {
   margin-bottom: 20px;
@@ -7,9 +7,9 @@
 
   .header {
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    background-color: $primary-color;
+    align-items: center;
+    justify-content: space-between;
+    background-color: variables.$primary-color;
     border-radius: 5px;
     padding: 5px;
   }
@@ -17,13 +17,13 @@
   h3 {
     margin: 0;
     font-size: 18px;
-    background-color: $primary-color;
+    background-color: variables.$primary-color;
     color: white;
-    font-family: $font-family;
+    font-family: variables.$font-family;
   }
 
   button {
-    background-color: $primary-color;
+    background-color: variables.$primary-color;
     color: white;
     border: none;
     cursor: pointer;
@@ -43,14 +43,14 @@
     max-height: 0;
     overflow: hidden;
     padding: 0 20px;
-    background-color: $background-color;
+    background-color: variables.$background-color;
     margin-bottom: 10px;
     border-radius: 5px;
     transition: max-height 0.3s ease-out, padding 0.3s ease-out;
   }
 
   .content.open {
-    max-height: 200px; 
+    max-height: 200px;
     padding: 20px;
   }
 }
@@ -61,6 +61,5 @@
 }
 
 .equipmentsList p {
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 }
-

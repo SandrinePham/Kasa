@@ -1,5 +1,5 @@
-import React from 'react';
-import './RatingStars.scss';
+import React from "react";
+import "./RatingStars.scss";
 
 const RatingStars = ({ rating }) => {
   const fullStars = Math.floor(rating); // Nombre d'étoiles pleines
@@ -13,7 +13,6 @@ const RatingStars = ({ rating }) => {
     for (let i = 0; i < fullStars; i++) {
       stars.push(<i key={`full-${i}`} className="fas fa-star"></i>);
     }
-
 
     // Ajouter les étoiles vides
     for (let i = 0; i < emptyStars; i++) {

@@ -1,5 +1,5 @@
-import React from 'react';
-import './imageBody.scss'; 
+import React from "react";
+import "./imageBody.scss";
 import PropTypes from "prop-types";
 
 const ImageBody = ({ imageSrc, title }) => {
@@ -12,8 +12,8 @@ const ImageBody = ({ imageSrc, title }) => {
 };
 
 ImageBody.propTypes = {
-  imageSrc: PropTypes.string.isRequired, 
-  title: PropTypes.string.isRequired,    
+  imageSrc: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default ImageBody;

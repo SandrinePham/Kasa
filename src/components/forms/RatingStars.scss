@@ -1,15 +1,14 @@
-@import "../../assets/style/variables.scss";
-
+@use "../../assets/style/variables.scss";
 
 .rating-stars {
-  color: $primary-color;
+  color: variables.$primary-color;
 
   i {
     margin-right: 5px;
   }
 
   .fas {
-    color: $primary-color;
+    color: variables.$primary-color;
   }
 
   .far {

@@ -16,7 +16,7 @@ const Home = () => {
     <div className="homeContainer">
       <div>
         <ImageBody
-          imageSrc="/assets/images/images/img_home.png"
+          imageSrc="./assets/images/images/img_home.png"
           title="Chez vous, partout et ailleurs"
         />
       </div>

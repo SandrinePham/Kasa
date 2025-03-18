@@ -1,4 +1,4 @@
-@import "../../assets/style/variables.scss";
+@use "../../assets/style/variables.scss";
 
 .banner {
   display: flex;
@@ -14,14 +14,14 @@
     justify-content: end;
     gap: 20px;
     color: black;
-    font-family: $font-family;
+    font-family: variables.$font-family;
   }
 
   a {
     text-decoration: none;
 
     &:visited {
-      color: black; 
+      color: black;
     }
 
     &:hover {
