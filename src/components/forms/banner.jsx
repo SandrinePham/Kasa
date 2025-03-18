@@ -7,8 +7,8 @@ const Banner = () => {
       <div className="banner">
         <img src="/assets/images/logo/LOGO.svg" alt="Logo Kasa" />{" "}
         <nav className="navLinks">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
+          <Link to="/">Accueil</Link>
+          <Link to="/about">A propos</Link>
         </nav>
       </div>
     </>

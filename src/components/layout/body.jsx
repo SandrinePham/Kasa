@@ -1,8 +1,8 @@
 import React from "react";
-import ImageBody from "../forms/imageBody";
-import Card from "../forms/card";
+import Card from "../forms/Card";
 import "./body.scss";
-import cardsData from "../../../data/data.json"; // Import du fichier JSON
+import cardsData from "../../../data/data.json"; 
+import ImageBody from "../forms/ImageBody";
 
 const Body = () => {
     const visibleCards = cardsData.slice(0, 6);
@@ -12,7 +12,7 @@ const Body = () => {
     <div>
       <ImageBody imageSrc="/assets/images/images/img_home.png" title="Chez vous, partout et ailleurs" />
     </div>
-      <div className="body-container">
+      <div className="bodyContainer">
         {visibleCards.map((card) => (
           <Card key={card.id} {...card} />
         ))}

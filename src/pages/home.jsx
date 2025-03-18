@@ -1,8 +1,7 @@
 import "./home.scss";
-
 import { useNavigate } from "react-router-dom";
-import ImageBody from "../components/forms/imageBody";
-import Card from "../components/forms/card";
+import ImageBody from "../components/forms/ImageBody";
+import Card from "../components/forms/Card";
 import cardsData from "../../data/data.json";
 
 const Home = () => {
@@ -14,9 +13,12 @@ const Home = () => {
   };
 
   return (
-    <div className="body">
+    <div className="homeContainer">
       <div>
-        <ImageBody imageSrc="/assets/images/images/img_home.png" title="Chez vous, partout et ailleurs" />
+        <ImageBody
+          imageSrc="/assets/images/images/img_home.png"
+          title="Chez vous, partout et ailleurs"
+        />
       </div>
       <div className="cardContainer">
         {visibleCards.map((card) => (

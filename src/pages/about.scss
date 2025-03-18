@@ -1,0 +1,21 @@
+
+
+.aboutContainer {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 25px;
+
+  .section{
+    width: 80%;
+    margin: auto;
+
+    @media (max-width: 1024px) {
+      width: 90%;
+    }
+
+    @media (max-width: 728px) {
+      width: 100%;
+  
+  }
+}
+}

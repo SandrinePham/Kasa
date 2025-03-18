@@ -5,29 +5,27 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  gap: 20px;
-  color: black;
-  font-family: $font-family;
-}
-
-a {
-  text-decoration: none;
-
-  &:visited {
-    color: black; // Empêche le changement de couleur après le clic
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+    color: black;
+    font-family: $font-family;
   }
 
-  &:hover {
-    text-decoration: underline; // Facultatif : effet au survol
+  a {
+    text-decoration: none;
+
+    &:visited {
+      color: black; 
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

@@ -1,17 +1,19 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import AppRouter from "./routes/AppRouter";
-import Footer from "./components/layout/footer";
+import Footer from "./components/layout/Footer";
 import "./App.scss";
-import Banner from "./components/forms/banner";
+import Header from "./components/layout/Header";
 
 const App = () => {
   return (
-    <Router> {/* Garder un seul BrowserRouter ici */}
-      <Banner /> {/* Navigation toujours visible */}
+    <Router>
+      {" "}
+      {}
+      <Header /> {}
       <main>
-        <AppRouter /> {/* Routes importées */}
+        <AppRouter /> {}
       </main>
-      <Footer /> {/* Footer toujours visible */}
+      <Footer /> {}
     </Router>
   );
 };

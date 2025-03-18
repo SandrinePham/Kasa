@@ -1,17 +1,23 @@
+.homeContainer {
+  margin: auto;
+  width: 90%;
+  margin-bottom: 25px;
+}
 
 .cardContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 cartes par ligne */
-    gap: 20px; /* Espace entre les cartes */
-    background-color: #F6F6F6;
-    border-radius: 25px;
-    margin: auto;
-    padding: 3%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  margin: auto;
+  padding: 3%;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-.body{
-    margin: auto;
-    width: 90%;
-    margin-bottom: 25px;
-    margin-top: 25px;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }

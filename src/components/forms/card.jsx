@@ -1,6 +1,5 @@
-// src/components/Card/Card.jsx
 import React from 'react';
-import './Card.scss';
+import './card.scss';
 
 const Card = ({ title, cover }) => (
   <div className="card">

@@ -1,10 +1,11 @@
-import Banner from "../forms/banner";
+import Banner from "../forms/Banner";
+import "./header.scss";
 
 const Header = () => {
   return (
-    <header>
+    <div className="headerContainer">
       <Banner />
-    </header>
+      </div>
   );
 };
 

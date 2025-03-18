@@ -1,29 +1,35 @@
-/* Carousel.css */
+@import "../../assets/style/variables.scss";
 
-/* Container principal */
-.carousel-container {
-    position: relative;
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Image */
-  .carousel-image {
+
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
     width: 100%;
     height: 415px;
     border-radius: 25px;
     transition: transform 0.5s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    object-fit: cover; /* Garde les proportions sans déformer */
-  
-}
-  
-  /* Boutons de navigation */
-  .carousel-button {
+    object-fit: cover;
+  }
+
+  .counter {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+
+  button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -36,24 +42,12 @@
     transition: background 0.3s;
     background-color: transparent;
   }
-  
-  
-  /* Position des boutons */
+
   .left {
     left: 20px;
   }
-  
+
   .right {
     right: 20px;
   }
-  
-  /* Compteur */
-  .carousel-counter {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10px;
-  }
+}

@@ -1,21 +1,23 @@
 @import "../../assets/style/variables.scss";
 
-
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: black;
   color: white;
-  padding: 20px;
-}
+  padding: 50px;
+  margin-top: 25px;
+  margin: auto;
 
-.footer img {
-  width: 122px;
-  height: 40px;
-}
+  img {
+    width: 122px;
+    height: 40px;
+  }
 
-.footer p{
-  font-size: 24px;
-  font-family: $font-family;
+  p {
+    font-size: 24px;
+    font-family: $font-family;
+    text-align: center;
+}
 }

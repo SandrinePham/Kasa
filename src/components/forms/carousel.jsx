@@ -17,10 +17,10 @@ const Carousel = ({ pictures }) => {
     };
   
     return (
-      <div className="carousel-container">
+      <div className="carouselContainer">
         {/* Bouton pour aller à l'image précédente */}
         {pictures.length > 1 && (
-          <button className="carousel-button left" onClick={prevSlide}>
+          <button className="carouselButton left" onClick={prevSlide}>
             ❮
           </button>
         )}
@@ -29,19 +29,19 @@ const Carousel = ({ pictures }) => {
         <img
           src={pictures[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
-          className="carousel-image"
+          className="carouselImage"
         />
 
         {/* Numérotation des images */}
       {pictures.length > 1 && (
-        <div className="carousel-counter">
+        <div className="counter">
           {currentIndex + 1} / {pictures.length}
         </div>
       )}
   
         {/* Bouton pour aller à l'image suivante */}
         {pictures.length > 1 && (
-          <button className="carousel-button right" onClick={nextSlide}>
+          <button className="button right" onClick={nextSlide}>
             ❯
           </button>
         )}

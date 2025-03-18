@@ -1,31 +1,30 @@
 @import "../../assets/style/variables.scss";
 
 .card {
-  border-radius: 10px; /* Bords arrondis */
-  overflow: hidden; /* Cache les débordements */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
-  background: $primary-color; /* Fond blanc */
-  width: 100%; /* 3 cartes par ligne */
-  height: 100%; /* Hauteur fixe */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: $primary-color;
+  width: 100%;
+  height: 100%;
 
   :hover {
     cursor: pointer;
   }
-}
 
-.card img {
-  width: 100%; /* L'image prend toute la largeur */
-  object-fit: cover; /* Garde les proportions sans déformer */
-}
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+  }
 
-.card-content {
-  padding: 0px; /* Espace autour du contenu */
-}
-
-h3 {
-  color: white; /* Couleur du texte */
-  font-size: 18px;
-  font-family: $font-family;
-  overflow: hidden; /* Cache les débordements */
-
+  h3 {
+    color: white;
+    font-size: 18px;
+    font-family: $font-family;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 300px;
+  }
 }

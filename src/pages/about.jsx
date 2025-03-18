@@ -1,11 +1,13 @@
 import React from "react";
-import ImageBody from "../components/forms/imageBody";
-import "../components/forms/imageBody.scss"; // Importer le fichier CSS pour le style
-import Collapse from "../components/forms/collapse";
+import ImageBody from "../components/forms/ImageBody";
+import "../components/forms/imageBody.scss"; 
+import Collapse from "../components/forms/Collapse";
+import "./about.scss"; 
 
 const About = () => {
   return (
     <>
+      <div className="aboutContainer">
       <div>
         <ImageBody imageSrc="/assets/images/images/img_about.png" title=" " />
       </div>
@@ -38,6 +40,7 @@ const About = () => {
             content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
           />
         </div>
+      </div>
       </div>
     </>
   );
