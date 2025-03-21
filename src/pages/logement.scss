@@ -5,6 +5,8 @@
   margin: auto;
   display: flex;
   flex-direction: column;
+  max-width: 1240px;
+  margin: auto;
 }
 
 .logementInfos {
@@ -19,6 +21,7 @@
 
   @media screen and (max-width: variables.$breakpoint-mobile) {
     flex-direction: column;
+    margin: auto;
   }
 }
 

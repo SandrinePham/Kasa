@@ -6,7 +6,6 @@ import cardsData from "../../data/data.json";
 
 const Home = () => {
   const navigate = useNavigate();
-  const visibleCards = cardsData.slice(0, 6);
 
   const handleCardClick = (id) => {
     navigate(`/logement/${id}`);
@@ -21,7 +20,7 @@ const Home = () => {
         />
       </div>
       <div className="cardContainer">
-        {visibleCards.map((card) => (
+        {cardsData.map((card) => (
           <div key={card.id} onClick={() => handleCardClick(card.id)}>
             <Card {...card} />
           </div>

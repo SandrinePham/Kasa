@@ -5,7 +5,11 @@ const Banner = () => {
   return (
     <>
       <div className="banner">
-        <img src="/assets/images/logo/LOGO.svg" alt="Logo Kasa" />{" "}
+        <img
+          src="/assets/images/logo/LOGO.svg"
+          alt="Logo Kasa"
+          className="logo"
+        />{" "}
         <nav className="navLinks">
           <Link to="/">Accueil</Link>
           <Link to="/about">A propos</Link>
