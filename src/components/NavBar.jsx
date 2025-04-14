@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 import "./NavBar.scss";
 
 function Navbar() {
@@ -6,14 +6,14 @@ function Navbar() {
     <nav>
       <NavLink
         to="/"
-        className={({ isActive }) => (isActive ? 'active' : '')}
+        className={({ isActive }) => (isActive ? "active" : "")}
         end
       >
         Accueil
       </NavLink>
       <NavLink
         to="/about"
-        className={({ isActive }) => (isActive ? 'active' : '')}
+        className={({ isActive }) => (isActive ? "active" : "")}
       >
         À Propos
       </NavLink>

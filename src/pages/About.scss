@@ -1,0 +1,22 @@
+@use "../assets/style/variables.scss";
+
+.aboutContainer {
+  margin: auto;
+  margin-bottom: 25px;
+  max-width: 1240px;
+  margin: auto;
+
+  .section {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
+
+    @media (max-width: variables.$breakpoint-tablet) {
+      width: 90%;
+    }
+
+    @media (max-width: variables.$breakpoint-mobile) {
+      width: 100%;
+    }
+  }
+}

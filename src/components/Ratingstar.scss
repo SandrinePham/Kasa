@@ -1,0 +1,17 @@
+@use "/src/assets/style/variables.scss";
+
+.rating-stars {
+  color: variables.$primary-color;
+
+  i {
+    margin-right: 5px;
+  }
+
+  .fas {
+    color: variables.$primary-color;
+  }
+
+  .far {
+    color: #e3e3e3;
+  }
+}

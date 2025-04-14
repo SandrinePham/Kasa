@@ -1,0 +1,122 @@
+@use "../assets/style/variables.scss";
+
+.logementContainer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1240px;
+  margin: auto;
+}
+
+.logementInfos {
+  display: flex;
+  flex-direction: column;
+}
+
+.logementDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+
+  @media screen and (max-width: variables.$breakpoint-mobile) {
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+h5 {
+  color: variables.$primary-color;
+  font-size: 36px;
+  margin: 0;
+    font-weight: bold;
+}
+
+.host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: variables.$primary-color;
+  font-family: variables.$font-family;
+  size: 18px;
+  justify-content: space-evenly;
+  gap: 5px;
+
+  .picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.location {
+  font-family: variables.$font-family;
+  color: #383838;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  font-family: variables.$font-family;
+  size: 18px;
+  @media screen and (max-width: 768px) {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.tagsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  .tag {
+    background-color: variables.$primary-color;
+    color: white;
+    border-radius: 10px;
+    font-family: variables.$font-family;
+    font-size: 14px;
+    width: 115px;
+    min-height: 30px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; // <--- Changer ici !
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+  
+    @media screen and (max-width: 768px) {
+      width: 84px;
+    }
+  }
+}
+  
+.logementDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  margin-top: 15px;
+
+  @media screen and (max-width: variables.$breakpoint-mobile) {
+    flex-direction: column;
+  }
+
+  .section {
+    width: 100%;
+  }
+}

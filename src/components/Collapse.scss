@@ -1,0 +1,67 @@
+@use "/src/assets/style/variables.scss";
+
+.collapseContainer {
+  margin-bottom: 20px;
+  width: 100%;
+  margin: auto;
+  color: black;
+
+  .collapseHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: variables.$primary-color;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    gap: 10px;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 18px;
+    background-color: variables.$primary-color;
+    color: white;
+    font-family: variables.$font-family;
+  }
+
+  button {
+    background-color: variables.$primary-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+
+    transition: background-color 0.3s ease;
+    i {
+      size: 40px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background-color: variables.$background-color;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    text-align: left;
+  }
+
+  .content.open {
+    max-height: 200px;
+  }
+}
+
+.equipmentsList {
+  padding: 0;
+  margin: 0;
+}
+
+.equipmentsList p {
+  margin-bottom: 5px;
+}

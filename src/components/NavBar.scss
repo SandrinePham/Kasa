@@ -2,11 +2,13 @@ nav a {
     text-decoration: none;
     color: black;
     margin-right: 1rem;
+    min-width: 365px;
+    white-space: nowrap;
+
   }
   
   nav a.active {
-    font-weight: bold;
-    color: blue;
-    border-bottom: 2px solid blue;
+    color: black;
+    border-bottom: 1px solid black;
   }
   
