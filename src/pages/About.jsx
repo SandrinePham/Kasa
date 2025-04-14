@@ -2,13 +2,14 @@ import React from "react";
 import ImageBody from "../components/ImageBody.jsx";
 import Collapse from "../components/Collapse";
 import "./about.scss";
+import aboutImage from "../assets/images/image_about.png"; // adapte le chemin si besoin
 
 const About = () => {
   return (
     <>
       <div className="aboutContainer">
         <div>
-          <ImageBody imageSrc="/src/assets/images/image_about.png" title=" " />
+          <ImageBody imageSrc={aboutImage} title=" " />
         </div>
 
         <div>

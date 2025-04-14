@@ -3,6 +3,7 @@ import ImageBody from "../components/ImageBody.jsx";
 import Card from "../components/Card";
 import cardsData from "../../data/data.json";
 import "./home.scss";
+import homeImage from "../assets/images/image_home.png"; // adapte le chemin si besoin
 
 const Home = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const Home = () => {
     <div className="homeContainer">
       <div>
         <ImageBody
-          imageSrc="/src/assets/images/image_home.png"
+          imageSrc={homeImage}
           title="Chez vous, partout et ailleurs"
         />
       </div>
