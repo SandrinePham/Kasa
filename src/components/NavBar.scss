@@ -1,14 +1,12 @@
 nav a {
-    text-decoration: none;
-    color: black;
-    margin-right: 1rem;
-    min-width: 365px;
-    white-space: nowrap;
+  text-decoration: none;
+  color: black;
+  margin-right: 1rem;
+  min-width: 365px;
+  white-space: nowrap;
+}
 
-  }
-  
-  nav a.active {
-    color: black;
-    border-bottom: 1px solid black;
-  }
-  
+nav a.active {
+  color: black;
+  border-bottom: 1px solid black;
+}

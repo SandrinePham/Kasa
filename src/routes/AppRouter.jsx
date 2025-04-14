@@ -12,8 +12,8 @@ function AppRouter() {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="*" element={<Error />} />
-        <Route path="/logement/:id" element={<Logement />} /> {/* Route dynamique */}
-
+        <Route path="/logement/:id" element={<Logement />} />{" "}
+        {/* Route dynamique */}
       </Route>
     </Routes>
   );

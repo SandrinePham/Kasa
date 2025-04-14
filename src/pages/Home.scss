@@ -1,28 +1,26 @@
 .homeContainer {
-    margin: auto;
-    margin-bottom: 25px;
-    max-width: 1240px;
-    margin: auto;
-    width: 90%;
-    padding: 10px;
+  margin: auto;
+  margin-bottom: 25px;
+  max-width: 1240px;
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+}
 
-  }
-  
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  border-radius: 25px;
+  margin: auto;
+  max-width: 1240px;
+  justify-content: center;
+  background-color: #f6f6f6;
+  padding: 25px;
+}
+
+@media (min-width: 1024px) {
   .cardContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    border-radius: 25px;
-    margin: auto;
-    max-width: 1240px;
-    justify-content: center;
-    background-color: #F6F6F6;
-    padding: 25px;
+    grid-template-columns: repeat(3, 1fr);
   }
-    
-  @media (min-width: 1024px) {
-    .cardContainer {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
+}
