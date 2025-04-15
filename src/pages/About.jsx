@@ -2,7 +2,7 @@ import React from "react";
 import ImageBody from "../components/ImageBody.jsx";
 import Collapse from "../components/Collapse";
 import "./about.scss";
-import aboutImage from "../assets/images/image_about.png"; // adapte le chemin si besoin
+import aboutImage from "../assets/images/image_about.png";
 
 const About = () => {
   return (

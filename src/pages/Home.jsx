@@ -3,7 +3,7 @@ import ImageBody from "../components/ImageBody.jsx";
 import Card from "../components/Card";
 import cardsData from "../../data/data.json";
 import "./home.scss";
-import homeImage from "../assets/images/image_home.png"; // adapte le chemin si besoin
+import homeImage from "../assets/images/image_home.png"; 
 
 const Home = () => {
   const navigate = useNavigate();
