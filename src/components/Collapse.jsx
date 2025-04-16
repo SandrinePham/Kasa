@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./collapse.scss";
+import PropTypes from "prop-types";
 
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,7 @@ const Collapse = ({ title, content }) => {
         {Array.isArray(content) ? (
           <div className="equipmentsList">
             {content.map((item, index) => (
-              <p key={index}>{item}</p> // Affiche chaque équipement dans un paragraphe
+              <p key={index}>{item}</p> 
             ))}
           </div>
         ) : (
@@ -34,6 +35,14 @@ const Collapse = ({ title, content }) => {
       </div>
     </div>
   );
+};
+
+Collapse.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]).isRequired,
 };
 
 export default Collapse;

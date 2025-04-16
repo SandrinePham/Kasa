@@ -1,5 +1,6 @@
 import React from "react";
 import "./card.scss";
+import PropTypes from "prop-types";
 
 const Card = ({ title, cover }) => (
   <div className="card">
@@ -8,4 +9,8 @@ const Card = ({ title, cover }) => (
   </div>
 );
 
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  cover: PropTypes.string.isRequired,
+};
 export default Card;

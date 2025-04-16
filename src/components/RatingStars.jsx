@@ -1,5 +1,6 @@
 import React from "react";
 import "./ratingStars.scss";
+import PropTypes from "prop-types";
 
 const RatingStars = ({ rating }) => {
   const fullStars = Math.floor(rating);
@@ -20,6 +21,10 @@ const RatingStars = ({ rating }) => {
   };
 
   return <div className="rating-stars">{renderStars()}</div>;
+};
+
+RatingStars.propTypes = {
+  rating: PropTypes.number.isRequired,
 };
 
 export default RatingStars;

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./carousel.scss";
+import PropTypes from "prop-types";
 
 const Carousel = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,6 +46,10 @@ const Carousel = ({ pictures }) => {
       )}
     </div>
   );
+};
+
+Carousel.propTypes = {
+  pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Carousel;
