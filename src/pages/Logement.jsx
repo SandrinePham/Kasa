@@ -11,7 +11,7 @@ const Logement = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    fetch(`/data.json`)
+    fetch(`/Kasa/data.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Erreur de chargement");
