@@ -1,17 +1,40 @@
 import { useParams, Navigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Carousel from "../components/Carousel.jsx";
 import Collapse from "../components/Collapse";
-import data from "../../data/data.json";
-import "./logement.scss";
 import RatingStars from "../components/RatingStars";
+import "./logement.scss";
 
 const Logement = () => {
   const { id } = useParams(); // Récupère l'id de l'URL
-  const apartment = data.find((item) => item.id === id);
+  const [apartment, setApartment] = useState(null);
+  const [error, setError] = useState(false);
 
-  // Si aucun logement correspondant, redirection vers la page d'erreur
-  if (!apartment) {
+  useEffect(() => {
+    fetch(`${process.env.PUBLIC_URL}/data.json`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Erreur de chargement");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        const found = data.find((item) => item.id === id);
+        if (!found) {
+          setError(true);
+        } else {
+          setApartment(found);
+        }
+      })
+      .catch(() => setError(true));
+  }, [id]);
+
+  if (error) {
     return <Navigate to="/error" />;
+  }
+
+  if (!apartment) {
+    return <p>Chargement...</p>;
   }
 
   return (
@@ -34,7 +57,6 @@ const Logement = () => {
           <div className="value">
             <div className="host">
               <p>
-                {" "}
                 {apartment.host.name.split(" ")[0]} <br />
                 {apartment.host.name.split(" ")[1]}
               </p>
@@ -44,7 +66,7 @@ const Logement = () => {
                 className="picture"
               />
             </div>
-            <RatingStars rating={apartment.rating} /> {}
+            <RatingStars rating={apartment.rating} />
           </div>
         </div>
         <div className="logementDetails">
@@ -61,3 +83,4 @@ const Logement = () => {
 };
 
 export default Logement;
+
