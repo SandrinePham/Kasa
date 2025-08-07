@@ -12,7 +12,7 @@ const Home = () => {
 
   // 🔄 Charger les données avec fetch()
   useEffect(() => {
-    fetch(`public/data.json`)
+    fetch(`${import.meta.env.BASE_URL}data.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Erreur lors du chargement du fichier JSON");
